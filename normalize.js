@@ -45,7 +45,7 @@ exports.createNodesFromEntities = ({ entities, entityType, schemaType, devRefres
     //   })
     // }
 
-    let id = entity.id === 'dummy' ? 'dummy' : createGatsbyId(createNodeId);
+    let id = entity.id === 'dummy' ? createNodeId('dummy') : createGatsbyId(createNodeId);
 
     // override ID for dev refresh
     // see https://github.com/gatsbyjs/gatsby/issues/14653
